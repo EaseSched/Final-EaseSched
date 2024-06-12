@@ -1,0 +1,23 @@
+Crew ID,Employee Name,Date Hired,Position Code,Job Status,Trained Station,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+300345678,Rey John Neri,18/12/2022,CRE,Part-Time,Eggs/Assembler/Initiator/Batch Grill/Prepping/Chicken Expert/Customer Area,00:00 - 6:00,,00:00 - 6:00,,6:00 - 12:00,6:00 - 11:00,6:00 - 12:00
+300345679,Jonash ligad,18/12/2022,CT,Full-Time,Batch Grill/Eggs/Prepping/Customer Area,00:00 - 6:00 / 15:00 - 21:00,00:00 - 6:00 / 15:00 - 21:00,00:00 - 6:00 / 15:00 - 21:00,00:00 - 6:00 / 15:00 - 21:00,00:00 - 6:00 / 15:00 - 21:00,00:00 - 6:00 / 15:00 - 21:00,00:00 - 6:00 / 15:00 - 21:00
+300345680,Patrick John Fernando,18/12/2022,CRE,Full-Time,Chicken Expert/Batch Grill,6:00 - 12:00,6:00 - 12:00,6:00 - 12:00,6:00 - 12:00,,6:00 - 12:00,6:00 - 12:00
+300345681,John Edward Bobier,18/12/2022,CRE,Part-Time,Initiator/Assembler/Batch Grill,12:00 - 18:00 / 18:00 - 00:00,15:00 - 00:00,,12:00 - 18:00 / 18:00 - 00:00,12:00 - 6: 00,12:00 - 18:00 / 18:00 - 00:00,15:00 - 00:00
+300345682,Brian Lorica,18/12/2022,CT,Full-Time,Assembler/Initiator/Batch Grill/Chicken Expert/Customer Area,12:00 - 18:00 / 18:00 - 00:00,,,12:00 - 18:00 / 18:00 - 00:00,12:00 - 18:00,12:00 - 18:00 / 18:00 - 00:00,
+300345683,Gracia Villanueva,18/12/2022,CRE,Part-Time,Batch Grill/Assembler/Initiator,12:00 - 18:00 / 18:00 - 00:00,15:00 - 00:00,,,12:00 - 18:00,,15:00 - 00:00
+300345684,Jayson Azuela,19/12/2023,CT,Part-Time,Prepping/Assembler/Initiator/Batch Grill/Eggs/Chicken Expert,18:00 - 00:00,15:00 - 00:00,,12:00 - 18:00 / 18:00 - 00:00,12:00 - 18:00,12:00 - 18:00,15:00 - 00:00
+300345685,Joshua Mendoza,20/12/2023,CT,Part-Time,Assembler/Initiator/Batch Grill/Eggs/Prepping/Chicken Expert,6:00 - 15:00,12:00 - 21:00,6:00 - 15:00,6:00 - 15:00,12:00 - 21:00,,
+300345686,John Mark Fuentes,21/12/2023,CRE,Part-Time,POS/Bdap/Fries/Expo/Presenter/Customer Area/MDS /Runner,18:00 - 00:00,15:00 - 00:00,,12:00 - 18:00 / 18:00 - 00:00,12:00 - 18:00,12:00 - 18:00,15:00 - 00:00
+300345687,John Rey Tolosa,22/12/2023,CRE,Part-Time,Bdap/POS/Customer Area/MDS /Runner,6:00 - 15:00,12:00 - 21:00,12:00 - 6:00 / 12:00 - 18:00,,12:00 - 21:00,10:00 - 18:00,
+300345688,Lea Beldad,23/12/2023,CRE,Full-Time,POS/Bdap/Fries/Expo/Presenter/Customer Area/ MDS /Runner,6:00 - 15:00,,6:00 - 15:00,,12:00 - 6:00 / 12:00 - 18:00,10:00 - 18:00,
+300345689,Dexter Alayan,24/12/2023,CRE,Full-Time,Maintenance/POS/Bdap/Fries/Expo/Presenter/Customer Area/MDS/Runner/Assembler /Prepping,12:00 - 6:00 / 12:00 - 18:00,12:00 - 21:00,6:00 - 15:00,,12:00 - 21:00,10:00 - 18:00,
+300345690,Allan Oliver Polliente,25/12/2023,CT,Full-Time,Fries/Customer Area/MDS /Runner,18:00 - 00:00,15:00 - 00:00,,12:00 - 18:00 / 18:00 - 00:00,12:00 - 18:00,12:00 - 18:00,15:00 - 00:00
+300345691,Paolo Vasquez,26/12/2023,CRE,Part-Time,Customer Area,6:00 - 15:00,12:00 - 21:00,6:00 - 15:00,6:00 - 15:00,12:00 - 21:00,,
+300345692,Jonathan Figuron,27/12/2023,CT,Part-Time,Fries/Customer Area/MDS/Runner/Chicken Expert/Initiator,18:00 - 00:00,15:00 - 00:00,,12:00 - 18:00 / 18:00 - 00:00,12:00 - 18:00,12:00 - 18:00,15:00 - 00:00
+300345693,Gracia Villanueva,28/12/2023,CRE,Part-Time,Customer Area,6:00 - 15:00,6:00 - 16:00,12:00 - 6:00 / 12:00 - 18:00,,12:00 - 21:00,10:00 - 18:00,
+300345694,Charisse Casilihan,29/12/2023,CRE,Full-Time,POS/Bdap/Fries/Expo/Presenter/Customer Area/MDS/Runner,,12:00 - 21:00,12:00 - 6:00 / 12:00 - 18:00,12:00 - 21:00,12:00 - 21:00,6:00 - 16:00,10:00 - 18:00
+300345695,Angela Nuccum,30/12/2023,CRE,Full-Time,Presenter/POS/Bdap/Fries/Expo/Customer Area/MDS/Runner,6:00 - 15:00,6:00 - 16:00,12:00 - 6:00 / 12:00 - 18:00,,12:00 - 21:00,12:00 - 21:00,
+300345696,Gracia Villanueva,31/12/2023,CRE,Part-Time,Customer Area,,12:00 - 21:00,,12:00 - 21:00,12:00 - 21:00,10:00 - 18:00,10:00 - 18:00
+300345697,Mj Palo,01/01/2024,CT,Part-Time,MDS /Fries/Customer Area/Runner,18:00 - 00:00,12:00 - 21:00,12:00 - 6:00 / 12:00 - 18:00,12:00 - 21:00,12:00 - 18:00,6:00 - 16:00,11:00 - 18:00
+300345698,Gracia Villanueva,02/01/2024,CT,Full-Time,Runner/Fries,,18:00 - 00:00,,15:00  - 12:00,18:00 - 12:00,6:00 - 12:00,
+300345699,Hazel Naval,03/01/2024,CRE,Full-Time,Expo/POS/Bdap/Fries/Presenter/Customer Area/MDS /Runner,18:00 - 00:00,12:00 - 21:00,12:00 - 6:00 / 12:00 - 18:00,12:00 - 21:00,12:00 - 21:00,6:00 - 16:00,10:00 - 18:00

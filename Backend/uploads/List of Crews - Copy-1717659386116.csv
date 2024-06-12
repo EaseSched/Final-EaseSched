@@ -1,0 +1,41 @@
+Employee Name,Hired Date,Position Code,Job Status,Trained Station,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+0300345678,Rey John Neri,2022-12-18,CRE,Part-Time,Eggs/Assembler/Initiator/Batch Grill/Prepping/Chicken Expert/Customer Area,00:00-6:00,,00:00-6:00,,6:00-12:00,6:00-11:00,6:00-12:00
+0300345679,Jonash ligad,2022-12-18,CT,Full-Time,Batch Grill/Eggs/Prepping/Customer Area,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00
+0300345680,Patrick John Fernando,2022-12-18,CRE,Full-Time,Chicken Expert/Batch Grill,6:00-12:00,6:00-12:00,6:00-12:00,6:00-12:00,,6:00-12:00,6:00-12:00
+0300345681,John Edward Bobier,2022-12-18,CRE,Part-Time,Initiator/Assembler/Batch Grill,12:00-18:00/18:00-00:00,15:00-00:00,,12:00-18:00/18:00-00:00,12:00-6:00,12:00-18:00/18:00-00:00,15:00-00:00
+0300345682,Brian Lorica,2022-12-18,CT,Full-Time,Assembler/Initiator/Batch Grill/Chicken Expert/Customer Area,12:00-18:00/18:00-00:00,,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00/18:00-00:00,
+0300345683,Gracia Villanueva,2022-12-18,CRE,Part-Time,Batch Grill/Assembler/Initiator,12:00-18:00/18:00-00:00,15:00-00:00,,,12:00-18:00,,15:00-00:00
+0300345684,Jayson Azuela,2023-12-19,CT,Part-Time,Prepping/Assembler/Initiator/Batch Grill/Eggs/Chicken Expert,18:00-00:00,15:00-00:00,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00,15:00-00:00
+0300345685,Joshua Mendoza,2023-12-20,CT,Part-Time,Assembler/Initiator/Batch Grill/Eggs/Prepping/Chicken Expert,6:00-15:00,12:00-21:00,6:00-15:00,6:00-15:00,12:00-21:00,,
+0300345686,John Mark Fuentes,2023-12-21,CRE,Part-Time,POS/Bdap/Fries/Expo/Presenter/Customer Area/MDS /Runner,18:00-00:00,15:00-00:00,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00,15:00-00:00
+0300345687,John Rey Tolosa,2023-12-22,CRE,Part-Time,Bdap/POS/Customer Area/MDS /Runner,6:00-15:00,00:00-6:00,12:00-6:00/12:00-18:00,,12:00-21:00,10:00-18:00,
+0300345688,Lea Beldad,2023-12-23,CRE,Full-Time,POS/Bdap/Fries/Expo/Presenter/Customer Area/ MDS /Runner,6:00-15:00,,6:00-15:00,,12:00-6:00/12:00-18:00,10:00-18:00,
+0300345689,Dexter Alayan,2023-12-24,CRE,Full-Time,Maintenance/POS/Bdap/Fries/Expo/Presenter/Customer Area/MDS/Runner/Assembler /Prepping,12:00-6:00/12:00-18:00,00:00-12:00,6:00-15:00,,12:00-21:00,10:00-18:00,
+0300345690,Allan Oliver Polliente,2023-12-25,CT,Full-Time,Fries/Customer Area/MDS /Runner,18:00-00:00,15:00-00:00,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00,15:00-00:00
+0300345691,Paolo Vasquez,2023-12-26,CRE,Part-Time,Customer Area,6:00-15:00,12:00-21:00,6:00-15:00,6:00-15:00,12:00-21:00,,
+0300345692,Jonathan Figuron,2023-12-27,CT,Part-Time,Fries/Customer Area/MDS/Runner/Chicken Expert/Initiator,18:00-00:00,15:00-00:00,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00,15:00-00:00
+0300345693,Gracia Villanueva,2023-12-28,CRE,Part-Time,Customer Area,6:00-15:00,6:00-16:00,12:00-6:00/12:00-18:00,,12:00-21:00,10:00-18:00,
+0300345694,Charisse Casilihan,2023-12-29,CRE,Full-Time,Bdap/Fries/Expo/Presenter/Customer Area/MDS/Runner,,12:00-21:00,12:00-6:00/12:00-18:00,12:00-21:00,12:00-21:00,6:00-16:00,10:00-18:00
+0300345695,Angela Nuccum,2023-12-30,CRE,Full-Time,Presenter/POS/Bdap/Fries/Expo/Customer Area/MDS/Runner,6:00-15:00,6:00-16:00,12:00-6:00/12:00-18:00,,12:00-21:00,12:00-21:00,
+0300345696,Gracia Villanueva,2023-12-31,CRE,Part-Time,Customer Area,,12:00-21:00,,12:00-21:00,12:00-21:00,10:00-18:00,10:00-18:00
+0300345697,Mj Palo,2024-01-01,CT,Part-Time,MDS /Fries/Customer Area/Runner,18:00-00:00,12:00-21:00,12:00-6:00/12:00-18:00,12:00-21:00,12:00-18:00,6:00-16:00,11:00-18:00
+0300345698,Gracia Villanueva,2024-01-02,CT,Full-Time,Runner/Fries,,18:00-00:00,,15:00-12:00,18:00-12:00,6:00-12:00,
+0300345699,Hazel Naval,2024-01-03,CRE,Full-Time,Expo/POS/Bdap/Fries/Presenter/Customer Area/MDS /Runner,18:00-00:00,12:00-21:00,12:00-6:00/12:00-18:00,12:00-21:00,12:00-21:00,6:00-16:00,10:00-18:00
+0300345700,Cyryl John Navarro,2024-01-01,CRE,Part-Time,Bdap/Customer Area,6:00-12:00,6:00-12:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00,00:00-6:00/15:00-21:00
+0300345701,Jeffrey Agdoro,2024-01-02,CT,Full-Time,Presenter/Runner,12:00-18:00,6:00-12:00,6:00-12:00,6:00-12:00,,6:00-12:00,6:00-12:00
+0300345702,John Matthew Lirio,2024-01-03,CRE,Full-Time,POS/Runner/Bdap,12:00-18:00/18:00-00:01,6:00-12:00,,12:00-18:00/18:00-00:00,12:00-6:00,12:00-18:00/18:00-00:00,15:00-00:00
+0300345703,Jhamel Mamasao,2024-01-04,CRE,Part-Time,Chicken Expert/Batch Grill,18:00-00:01,,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00/18:00-00:00,
+0300345704,Dado Ballester,2024-01-05,CT,Full-Time,Bdap/Customer Area,6:00-15:01,15:00-00:00,,,12:00-18:00,,15:00-00:00
+0300345705,Joshua Matubis,2024-01-06,CRE,Part-Time,POS/Presenter/Runner,18:00-00:01,15:00-00:00,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00,15:00-00:00
+0300345706,Raven Bathan,2024-01-07,CT,Part-Time,POS/Runner/Bdap,6:00-15:00,00:00-6:00,6:00-15:00,6:00-15:00,12:00-21:01,,
+0300345707,Mark Hebres,2024-01-08,CT,Part-Time,Chicken Expert/Batch Grill,6:00-15:00,15:00-00:01,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00,15:00-00:00
+0300345708,Dwayne Johnson,2024-01-09,CRE,Part-Time,Maintenance/Customer Area/Runner/Expo,12:00-6:00/12:00-18:01,12:00-23:00,12:00-6:00/12:00-18:01,,12:00-21:01,10:00-18:00,
+0300345709,Kevin Hart,2024-01-10,CRE,Part-Time,Batch Grill/Fries/Eggs,18:00-00:01,,6:00-15:00,,12:00-6:00/12:00-18:01,10:00-18:00,
+0300345710,Kai Cenat,2024-01-11,CRE,Full-Time,Runner/MDS/Expo,6:00-15:01,12:00-21:00,6:00-15:00,,12:00-21:01,10:00-18:00,
+0300345711,Ray Lingling,2024-01-12,CRE,Full-Time,Assembler/Initiator/Chicken Expert,00:00-5:01,15:00-00:01,,12:00-18:00/18:00-00:00,12:00-18:00,12:00-18:00,15:00-00:00
+0300345712,Hev Abi,2024-01-12,CT,Full-Time,Eggs/Assembler/Initiator/Batch Grill/Prepping/Chicken Expert/Customer Area,6:00-15:00,12:00-21:01,6:00-15:00,6:00-15:00,12:00-21:01,,
+0300345713,Apollo Quiboloy,2024-01-12,CRE,Part-Time,Batch Grill/Eggs/Prepping/Customer Area,,15:00-00:01,,12:00-18:00/18:00-00:01,12:00-18:00,12:00-18:00,15:00-00:00
+0300345714,Robin Padilla,2024-01-12,CT,Part-Time,Chicken Expert/Batch Grill,6:00-15:00,6:00-16:01,12:00-6:00/12:00-18:00,,12:00-21:00,10:00-18:01,
+0300345715,Risa Hontiveros,2024-01-12,CRE,Part-Time,Initiator/Assembler/Batch Grill,,12:00-21:01,12:00-6:00/12:00-18:00,12:00-21:00,12:00-21:00,6:00-16:01,10:00-18:00
+0300345716,Alice Guo,2024-01-12,CRE,Full-Time,Assembler/Initiator/Batch Grill/Chicken Expert/Customer Area,18:00-23:00,6:00-16:01,12:00-6:00/12:00-18:00,,12:00-21:00,12:00-21:00,
+0300345717,Nelson Legacion,2024-01-13,CRE,Full-Time,POS/Initiator/Customer Area,12:00-6:00,6:00-16:02,12:00-6:00/12:00-18:01,,12:00-21:00,12:00-21:00,
