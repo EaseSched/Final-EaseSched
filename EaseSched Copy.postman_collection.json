@@ -1,0 +1,921 @@
+{
+	"info": {
+		"_postman_id": "e337c0dc-129a-454d-810c-64c328a7c05a",
+		"name": "EaseSched Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32329946"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjI0LTEyMzQ1NiIsImlhdCI6MTcwNjUyNjA1NCwiZXhwIjoxNzA2NTI5NjU0fQ.9yn4bi4aR9rjd-dFUzB-znTRleIX5LsVBE3DEoxFIdU",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id_number\" : \"0300345670\",\r\n  \"password\" : \"Password1!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Routes",
+			"item": [
+				{
+					"name": "DISPLAY ALL USERS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjk4OTgwMywiZXhwIjoxNzE2OTkzNDAzfQ.lmXsfz5Xbki0VD1m0zLaSixm3zc3-7DdnQsZPIZQ8MQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH USER BY ID NUM",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjQ0NzA0NCwiZXhwIjoxNzE2NDUwNjQ0fQ.QNI6pTKGZ0mp33Xu9VagWC5Ut2aAHHtVTg9RrX1a8A4"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/0300345670",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"0300345670"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NDgyNDg5LCJleHAiOjE3MTQ0ODYwODl9.J0k0-xJFFN2-DK2RinwABkfn_z8cfEUuuTh-S53df3s"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_number\": \"0300345678\",\r\n    \"name\": \"Jayson Azuela\",\r\n    \"password\": \"Admin12345?\",\r\n    \"is_active\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjI0LTEyMzQ1NiIsImlhdCI6MTcwNjQ1MTEzNSwiZXhwIjoxNzA2NDU0NzM1fQ.RKiNk64Q5YXzjSqbYuisqRdqp3SXaUfdIuhSIDPdeH8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/user/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH USER BY NAME",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjQ0NzA0NCwiZXhwIjoxNzE2NDUwNjQ0fQ.QNI6pTKGZ0mp33Xu9VagWC5Ut2aAHHtVTg9RrX1a8A4"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/name/search?name=Admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"name",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD USER",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Admin\",\r\n    \"id_number\": \"0300345670\",\r\n    \"password\": \"Password1!\",\r\n    \"role_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Working Area Routes",
+			"item": [
+				{
+					"name": "ADD STATION",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjYxNjAwMiwiZXhwIjoxNzE2NjE5NjAyfQ.7a9f5001NVtmPUPhl8S5KbuSv5HnBwCwUFJBlzqmPhQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"area_id\": 1,\r\n    \"station_name\": \"Testing Station9\",\r\n    \"number_of_employee\": 3,\r\n    \"availability\": [\r\n        {\r\n            \"day_name\": \"monday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"6:00 AM\",\r\n                    \"shift_end\": \"2:00 PM\"\r\n                },\r\n                {\r\n                    \"shift_start\": \"2:30 PM\",\r\n                    \"shift_end\": \"10:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"tuesday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"wednesday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"5:00 PM\",\r\n                    \"shift_end\": \"1:00 AM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"thursday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"friday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"saturday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"sunday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/station/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"station",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE STATION",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NDk0NjM5LCJleHAiOjE3MTQ0OTgyMzl9.OpOBsUdkoReLB6jz7JiqHSZS6JnYaQdS4-N_q4TlyZw"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"area_id\": 1,\r\n    \"station_name\": \"Testing Station5\",\r\n    \"number_of_employee\": 3,\r\n    \"availability\": [\r\n        {\r\n            \"day_name\": \"sunday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                },\r\n                {\r\n                    \"shift_start\": \"3:00 PM\",\r\n                    \"shift_end\": \"9:00 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"monday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"6:00 AM\",\r\n                    \"shift_end\": \"2:00 PM\"\r\n                },\r\n                {\r\n                    \"shift_start\": \"2:30 PM\",\r\n                    \"shift_end\": \"10:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"tuesday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"wednesday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"5:00 PM\",\r\n                    \"shift_end\": \"1:00 AM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"thursday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"friday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"saturday\",\r\n            \"shift_timings\": [\r\n                {\r\n                    \"shift_start\": \"7:30 AM\",\r\n                    \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/station/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"station",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE ALL STATIONS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjYyNTM2NSwiZXhwIjoxNzE2NjI4OTY1fQ.X0TP79wvAlH0f978fMKg7N9CHV9c3drMAgM70ZHsRq8"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/station/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"station",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE STATION BY NAME",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjI2LCJpZF9udW1iZXIiOiIwMzAwMzQ1NjcwIiwibmFtZSI6IlBhYmxvIEVzdGltYXIiLCJyb2xlSWQiOjIsImlhdCI6MTcxNDUwNjk1MywiZXhwIjoxNzE0NTEwNTUzfQ.NelPbeNlDCdEnuAfgn8sd0XxElp8LvDndWhJLlKzNKQ"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/station/Maintenance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"station",
+								"Maintenance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IMPORT STATION CSV",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjYyNTM2NSwiZXhwIjoxNzE2NjI4OTY1fQ.X0TP79wvAlH0f978fMKg7N9CHV9c3drMAgM70ZHsRq8"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/csvStation/import-StationCsv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"csvStation",
+								"import-StationCsv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Import Station CSV",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjQ0ODg1MSwiZXhwIjoxNzE2NDUyNDUxfQ.YoVBAEQ1biE6lKi0oAy0Naw6_-qsie7xwSVZhxlRSYM"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/csvStation/import-StationCsv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"csvStation",
+								"import-StationCsv"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Leave Routes",
+			"item": [
+				{
+					"name": "ADD EMPLOYEE ON LEAVE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NjM1NDI4LCJleHAiOjE3MTQ2MzkwMjh9.oRmb986Ii7Vw3TNg0VxG03UdvV60YcITvXL048K2wxQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Rey John Neri\",\r\n    \"start_date\": \"2024-05-02\",\r\n    \"end_date\": \"2024-05-03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employeeOnLeave/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeOnLeave",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE ALL EMPLOYEE ON LEAVE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NjUyMTAyLCJleHAiOjE3MTQ2NTU3MDJ9.jEAEjMjlECxaFni5DMO5644GUmENaRHrOYkxV3QEVWE"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/employeeOnLeave/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeOnLeave",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE EMPLOYEE ON LEAVE USING CREW ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NTY1MTkxLCJleHAiOjE3MTQ1Njg3OTF9.K6xgxhLcPBZ-Yw3n0IpGP8DyxLQqG5tT8MfGVmiK-YE"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/employeeOnLeave/0300345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeOnLeave",
+								"0300345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE EMPLOYEE ON LEAVE BY NAME",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NTcxMzQ2LCJleHAiOjE3MTQ1NzQ5NDZ9.xdXJJP5I50ju09t2_Zx7dWZSGLVru2ghT-JWrHlo4-o"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/employeeOnLeave/name/Rey John Neri",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeOnLeave",
+								"name",
+								"Rey John Neri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPLOYEE ON LEAVE BY NAME",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NjM2NDY5LCJleHAiOjE3MTQ2NDAwNjl9.-15798UAi3-KGXzKeXpQ0meqC51aPgmxjt7HNn_Q6dI"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"start_date\": \"2024-04-26\",\r\n    \"end_date\": \"2024-04-29\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employeeOnLeave/update/Rey John Neri",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employeeOnLeave",
+								"update",
+								"Rey John Neri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IMPORT CSV LEAVE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzEiLCJuYW1lIjoiU2hpZnQgTWFuYWdlciIsInJvbGVJZCI6MiwiaWF0IjoxNzE0Nzk5MTY0LCJleHAiOjE3MTQ4MDI3NjR9.SD_wmXW8EMfkNUN3VS87eL6IdeXtqUer-6vJnQBMNJs"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/csvLeave/import-leave-csv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"csvLeave",
+								"import-leave-csv"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee Routes",
+			"item": [
+				{
+					"name": "IMPORT EMPLOYEE CSV",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjYyNTM2NSwiZXhwIjoxNzE2NjI4OTY1fQ.X0TP79wvAlH0f978fMKg7N9CHV9c3drMAgM70ZHsRq8"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/csv/import-csv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"csv",
+								"import-csv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE ALL EMPLOYEE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjYyNTM2NSwiZXhwIjoxNzE2NjI4OTY1fQ.X0TP79wvAlH0f978fMKg7N9CHV9c3drMAgM70ZHsRq8"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/employee/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD EMPLOYEE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NTExMDU4LCJleHAiOjE3MTQ1MTQ2NTh9.x4YKSq7ajcd2makN5k7-uQnr0XcDYBVYHFy84AKJLvY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"poscod\": \"CRE\",\r\n    \"crew_id\": \"0300568752\",\r\n    \"name\": \"Testing Add43\",\r\n    \"hired_date\": \"04-01-2024\",\r\n    \"stations\": [\"Eggs\", \"Fries\", \"Prepping\", \"Assembler\"],\r\n    \"job_status\": \"Full-Time\",\r\n    \"availability\": [\r\n        {\r\n            \"day_name\": \"sunday\",\r\n            \"shifts\": []\r\n        },\r\n        {\r\n            \"day_name\": \"monday\",\r\n            \"shifts\": [\r\n                {\r\n                \"shift_start\": \"7:30 AM\", \r\n                \"shift_end\": \"1:30 PM\"},\r\n                {\r\n                \"shift_start\": \"4:00 PM\", \r\n                \"shift_end\": \"9:00 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"tuesday\",\r\n            \"shifts\": [\r\n                {\r\n                \"shift_start\": \"5:00 PM\", \r\n                \"shift_end\": \"1:00 AM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"wednesday\",\r\n            \"shifts\": [\r\n                {\r\n                \"shift_start\": \"7:30 AM\", \r\n                \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"thursday\",\r\n            \"shifts\": [\r\n                {\r\n                \"shift_start\": \"7:30 AM\", \r\n                \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"friday\",\r\n            \"shifts\": [\r\n                {\r\n                \"shift_start\": \"7:30 AM\", \r\n                \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"day_name\": \"saturday\",\r\n            \"shifts\": [\r\n                {\r\n                \"shift_start\": \"7:30 AM\", \r\n                \"shift_end\": \"1:30 PM\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"add"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETREVE EMPLOYEE BY CREW ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NTExMDU4LCJleHAiOjE3MTQ1MTQ2NTh9.x4YKSq7ajcd2makN5k7-uQnr0XcDYBVYHFy84AKJLvY"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/employee/0300345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"0300345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETREVE DAYS WITH SA BY CREW ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NTExMDU4LCJleHAiOjE3MTQ1MTQ2NTh9.x4YKSq7ajcd2makN5k7-uQnr0XcDYBVYHFy84AKJLvY"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/employee/availability/0300345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"availability",
+								"0300345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE STATUS OF EMPLOYEE",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NTExMDU4LCJleHAiOjE3MTQ1MTQ2NTh9.x4YKSq7ajcd2makN5k7-uQnr0XcDYBVYHFy84AKJLvY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/status/0300345678",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"status",
+								"0300345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPLOYEE BY CREW ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NDkyMzcyLCJleHAiOjE3MTQ0OTU5NzJ9.qM4q84v7nh_509pKHBKXoUIeJAjlB1n8-UiFmNqZfxM"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"poscod\": \"CRE\",\r\n    \"job_status\": \"Part-Time\",\r\n    \"availability\": {\r\n        \"sunday\": [\r\n            {\r\n                \"shift_start\": \"5:00 AM\",\r\n                \"shift_end\": \"10:00 AM\"\r\n            },\r\n            {\r\n                \"shift_start\": \"3:00 PM\",\r\n                \"shift_end\": \"10:00 PM\"\r\n            }\r\n        ],\r\n        \"monday\": [\r\n            {\r\n                \"shift_start\": \"7:30 AM\",\r\n                \"shift_end\": \"1:30 PM\"\r\n            },\r\n            {\r\n                \"shift_start\": \"4:00 PM\",\r\n                \"shift_end\": \"9:00 PM\"\r\n            }\r\n        ],\r\n        \"tuesday\": [\r\n            {\r\n                \"shift_start\": \"5:00 PM\",\r\n                \"shift_end\": \"1:00 AM\"\r\n            }\r\n        ],\r\n        \"wednesday\": [\r\n            {\r\n                \"shift_start\": \"7:30 AM\",\r\n                \"shift_end\": \"1:30 PM\"\r\n            }\r\n        ],\r\n        \"thursday\": [\r\n            {\r\n                \"shift_start\": \"7:30 AM\",\r\n                \"shift_end\": \"1:30 PM\"\r\n            }\r\n        ],\r\n        \"friday\": [\r\n            {\r\n                \"shift_start\": \"7:30 AM\",\r\n                \"shift_end\": \"1:30 PM\"\r\n            }\r\n        ],\r\n        \"saturday\": [\r\n            {\r\n                \"shift_start\": \"7:30 AM\",\r\n                \"shift_end\": \"1:30 PM\"\r\n            }\r\n        ]\r\n    },\r\n    \"stations_assigned\": [\r\n        \"Fries\",\r\n        \"Prepping\",\r\n        \"Assembler\",\r\n        \"Batch Grill\"\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/0300568751",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"0300568751"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RETRIEVE EMPLOYEES BY NAME",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzgiLCJuYW1lIjoiSmF5c29uIEF6dWVsYSIsInJvbGVJZCI6MSwiaWF0IjoxNzE0NTExMDU4LCJleHAiOjE3MTQ1MTQ2NTh9.x4YKSq7ajcd2makN5k7-uQnr0XcDYBVYHFy84AKJLvY"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/employee/name/Rey John Neri",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"name",
+								"Rey John Neri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Import Employee CSV NEW",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlkX251bWJlciI6IjAzMDAzNDU2NzEiLCJuYW1lIjoiU2hpZnQgTWFuYWdlciIsInJvbGVJZCI6MiwiaWF0IjoxNzE0Nzk1NjU5LCJleHAiOjE3MTQ3OTkyNTl9.YoMaoh14bt0bAU7FwlXDJaEL6XgIsoYRtDnPsGyUBIY"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/csv/import-csv-new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"csv",
+								"import-csv-new"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Algorithm",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjY1Njg4MSwiZXhwIjoxNzE2NjYwNDgxfQ.6g-1sbA9eYXogMTHndwcSCBh40_Z0UgqZCkzmp5zvMg"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/sched/schedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sched",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Sched Records",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlkX251bWJlciI6IjAzMDAzNDU2NzAiLCJuYW1lIjoiQWRtaW4iLCJyb2xlSWQiOjEsImlhdCI6MTcxNjk4OTgwMywiZXhwIjoxNzE2OTkzNDAzfQ.lmXsfz5Xbki0VD1m0zLaSixm3zc3-7DdnQsZPIZQ8MQ"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/sched/schedule/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sched",
+						"schedule",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Schedule",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Backtrack Schedule",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
